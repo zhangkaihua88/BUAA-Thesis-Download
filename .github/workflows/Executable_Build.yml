@@ -45,7 +45,7 @@ jobs:
           onefile: true
           enable-plugins: pyside6
           disable-console: true
-          windows-icon-from-ico: resources/app.ico
+          # windows-icon-from-ico: resources/app.ico
           
       # Uploads artifact
       - name: Upload Artifacts

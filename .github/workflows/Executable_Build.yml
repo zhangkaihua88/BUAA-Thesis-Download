@@ -44,7 +44,7 @@ jobs:
           access-token: ${{ secrets.NUITKA_COMMERCIAL_ACCESS_TOKEN }}
           onefile: true
           enable-plugins: pyside6
-          disable-console: true
+          disable-console: false
           # windows-icon-from-ico: resources/app.ico
           
       # Uploads artifact
@@ -53,7 +53,5 @@ jobs:
         with:
           name: ${{ runner.os }} Build
           path: |
-            build/*.exe
-            build/*.bin
-            build/*.app/**/*
+            build/*
             

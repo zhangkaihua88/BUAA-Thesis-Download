@@ -1,4 +1,17 @@
-# BUAA-Thesis-Download
+# 北航学位论文下载工具
+<p align="center">
+  <a href="https://github.com/zhangkaihua88" alt="开发者">
+    <img src="https://img.shields.io/badge/开发者-幻华-blue?logo=github">
+  </a>
+  <a href="https://github.com/zhangkaihua88/BUAA-Postgraduate-Aischedule/" alt="version">
+    <img src="https://img.shields.io/github/v/release/zhangkaihua88/BUAA-Thesis-Download?label=ver.&logo=">
+  </a>
+  <a href="https://github.com/zhangkaihua88/BUAA-Postgraduate-Aischedule/" alt="使用人数">
+    <img src="https://img.shields.io/github/downloads/zhangkaihua88/BUAA-Thesis-Download/total?color=success">
+    
+  </a>
+</p>
+
 ## 用途
 本工具可以：
 1. 下载[北京航空航天大学](https://paper.lib.buaa.edu.cn/index.action)学位论文库中可查看的论文。
@@ -35,5 +48,7 @@
 - 如果为了获得整篇文章文本, 可以考虑使用 OCR 工具. 如Adobe Acrobat等进行扫描.
 - 如果为了获得某一段落或部分文本, 考虑使用如`白描`, `Bob`, `天若`, `微信`等工具进行小段落内容识别。
 
-## 参考
+## 更新日志
+- 2022-10-28(v0.1.0)
+- ## 参考
 - [北大论文平台下载工具](https://github.com/xiaotianxt/PKU-Thesis-Download)

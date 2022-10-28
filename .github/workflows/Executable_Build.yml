@@ -53,7 +53,7 @@ jobs:
       if: runner.os == 'Windows'
       shell: powershell
       run: |
-        python -m nuitka --onefile --assume-yes-for-downloads --enable-plugin=pyside6 -o BUAAThesisDowload.exe main.py
+        python -m nuitka --onefile --assume-yes-for-downloads --enable-plugin=pyside6 -o BUAAThesisDowload.exe BUAAThesisDowload.py
 
           
       # Uploads artifact

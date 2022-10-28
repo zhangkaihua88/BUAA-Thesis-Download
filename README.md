@@ -50,5 +50,6 @@
 
 ## 更新日志
 - 2022-10-28(v0.1.0)
-- ## 参考
+
+## 参考
 - [北大论文平台下载工具](https://github.com/xiaotianxt/PKU-Thesis-Download)

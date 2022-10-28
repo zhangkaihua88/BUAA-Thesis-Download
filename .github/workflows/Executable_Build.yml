@@ -30,10 +30,13 @@ jobs:
           python-version: '3.8' # Version range or exact version of a Python version to use, using SemVer's version range syntax
           architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
           cache: 'pip'
+
+      # --disable-console
+      # --windows-icon-from-ico=resources/app.ico
       - run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          python -m nuitka --onefile --assume-yes-for-downloads --enable-plugin=pyside6 --output-dir=build BUAAThesisDowload.py
+          python -m nuitka --onefile --assume-yes-for-downloads --enable-plugin=pyside6 --disable-console --output-dir=build BUAAThesisDowload.py
 
       # Build python script into a stand-alone exe
       # - uses: Nuitka/Nuitka-Action@main
@@ -46,8 +49,7 @@ jobs:
       #     disable-console: false
       #     # windows-icon-from-ico: resources/app.ico
       
-      # --disable-console
-      # --windows-icon-from-ico=resources/app.ico
+      
       # - name: Build Executable (Windows)
       # if: runner.os == 'Windows'
       # shell: powershell
@@ -65,4 +67,4 @@ jobs:
         with:
           name: ${{ runner.os }} Build
           path: |
-            build/*
+            build/BUAAThesisDowload.exe

@@ -37,15 +37,24 @@ jobs:
           pip install -r requirements.txt
 
       # Build python script into a stand-alone exe
-      - uses: Nuitka/Nuitka-Action@main
-        with:
-          script-name: main.py
-          standalone: true
-          access-token: ${{ secrets.NUITKA_COMMERCIAL_ACCESS_TOKEN }}
-          onefile: true
-          enable-plugins: pyside6
-          disable-console: false
-          # windows-icon-from-ico: resources/app.ico
+      # - uses: Nuitka/Nuitka-Action@main
+      #   with:
+      #     script-name: main.py
+      #     standalone: true
+      #     access-token: ${{ secrets.NUITKA_COMMERCIAL_ACCESS_TOKEN }}
+      #     onefile: true
+      #     enable-plugins: pyside6
+      #     disable-console: false
+      #     # windows-icon-from-ico: resources/app.ico
+      
+      # --disable-console
+      # --windows-icon-from-ico=resources/app.ico
+      - name: Build Executable (Windows)
+      if: runner.os == 'Windows'
+      shell: powershell
+      run: |
+        python -m nuitka --onefile --assume-yes-for-downloads --enable-plugin=pyside6 -o BUAAThesisDowload.exe main.py
+
           
       # Uploads artifact
       - name: Upload Artifacts
@@ -53,5 +62,7 @@ jobs:
         with:
           name: ${{ runner.os }} Build
           path: |
-            build/*
+            build/*.exe
+            build/*.bin
+            build/*.app/**/*
             

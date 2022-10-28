@@ -30,7 +30,7 @@
 **本脚本仅作为学术工具使用, 下载的文件如果泄露, 可能会被追究法律责任, 本人不承担使用此脚本的一切后果.**
 
 ## 使用方法
-1. 下载打包后的软件
+1. 下载打包后的[软件](https://github.com/zhangkaihua88/BUAA-Thesis-Download/releases/download/0.1.0/BUAAThesisDowload.zip)
 2. 从所需要下载的论文的详情页复制关键信息
    - `fid`: 论文的id，从浏览论文的网址中可以找到, 例如`https://copyright.lib.buaa.edu.cn/pdfindex.jsp?fid=ee8eb9b94f66990ace67414e01b5ea8c`中的`123456`
    - `cookie`: 从浏览器中复制cookie，点击F12, 进入网络控制台, 获取网页Cookie, 例如`Hm_lvt_xxx=xxx,xxx; _ga=GA1.3.xxx.xxx; UM_distinctid=xxx-xxx-xxx-xxx-xx; JSESSIONID=xxx`

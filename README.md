@@ -4,7 +4,7 @@
     <img src="https://img.shields.io/badge/开发者-幻华-blue?logo=github">
   </a>
   <a href="https://github.com/zhangkaihua88/BUAA-Thesis-Download/" alt="version">
-    <img src="https://img.shields.io/github/v/release/zhangkaihua88/BUAA-Thesis-Download?label=ver.&logo=">
+    <img src="https://img.shields.io/github/v/release/zhangkaihua88/BUAA-Thesis-Download?label=ver.">
   </a>
   <a href="https://github.com/zhangkaihua88/BUAA-Thesis-Download/" alt="使用人数">
     <img src="https://img.shields.io/github/downloads/zhangkaihua88/BUAA-Thesis-Download/total?color=success">

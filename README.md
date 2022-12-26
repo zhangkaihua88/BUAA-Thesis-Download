@@ -30,6 +30,7 @@
 **本脚本仅作为学术工具使用, 下载的文件如果泄露, 可能会被追究法律责任, 本人不承担使用此脚本的一切后果.**
 
 ## 使用方法
+### 软件版
 1. 下载打包后的[软件](https://github.com/zhangkaihua88/BUAA-Thesis-Download/releases/download/0.1.0/BUAAThesisDowload.zip)
 2. 从所需要下载的论文的详情页复制关键信息
    - `fid`: 论文的id，从浏览论文的网址中可以找到, 例如`https://copyright.lib.buaa.edu.cn/pdfindex.jsp?fid=ee8eb9b94f66990ace67414e01b5ea8c`中的`123456`
@@ -38,7 +39,10 @@
    - `max_pages`: 为论文的总页数
    - `scale`: 为清晰度, 原始预览清晰度为`2`, 为了提高清晰度, 可以设置为`5`或`10`, 但是会导致下载速度变慢, pdf文件增大
 3. 点击下载(校内终端快速传递文件可以使用[北航云盘](https://bhpan.buaa.edu.cn/#/))
-
+### 插件版
+1. 安装[Tampermonkey](https://www.tampermonkey.net/index.php?ext=dhdg), [Tampermokey使用教程](https://zhuanlan.zhihu.com/p/128453110)
+2. 安装此[脚本](https://greasyfork.org/zh-CN/scripts/457168-buaa-thesis-download).
+3. 打开某篇论文在线阅读, 在左侧列表可以调整清晰度, 下载文件, 根据需要点击即可.
 ## 原理
 - 脚本会首先请求所有pdf图片链接
 - 随后请求图片，
@@ -50,6 +54,7 @@
 
 ## 更新日志
 - 2022-10-28(v0.1.0)
-
+- 2022-12-26
+  - 添加油猴插件版()
 ## 参考
 - [北大论文平台下载工具](https://github.com/xiaotianxt/PKU-Thesis-Download)

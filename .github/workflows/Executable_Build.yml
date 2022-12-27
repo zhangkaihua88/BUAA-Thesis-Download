@@ -68,4 +68,4 @@ jobs:
         with:
           name: BUAAThesisDowload
           path: |
-            build/BUAAThesisDowload.exe
+            software/build/BUAAThesisDowload.exe

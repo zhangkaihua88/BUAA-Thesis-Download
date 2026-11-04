@@ -8,7 +8,7 @@
   </a>
   <a href="https://github.com/zhangkaihua88/BUAA-Thesis-Download/" alt="使用人数">
     <img src="https://img.shields.io/github/downloads/zhangkaihua88/BUAA-Thesis-Download/total?color=success">
-    
+
   </a>
 </p>
 
@@ -42,7 +42,14 @@
 ### 插件版
 1. 安装[Tampermonkey](https://www.tampermonkey.net/index.php?ext=dhdg), [Tampermokey使用教程](https://zhuanlan.zhihu.com/p/128453110)
 2. 安装此[脚本](https://greasyfork.org/zh-CN/scripts/457168-buaa-thesis-download).
-3. 打开某篇论文在线阅读, 在左侧列表可以调整清晰度, 下载文件, 根据需要点击即可.
+3. 打开某篇论文在线阅读, 在左侧列表可以调整清晰度, 下载文件, 根据需要点击即可. （由于域名更新了，脚本目前测试是没法使用的，请参考greasyfork中的反馈中的代码自行更新脚本代码）
+### 直接粘贴js代码到地址栏
+1. 打开论文详览页，进入全文阅读页：`/read/pdfindex1.jsp?fid=...`
+2. 打开 `BUAA-Thesis-Download.bookmarklet.txt` 文件，复制全部内容。
+3. 粘贴到浏览器地址栏并回车。若浏览器删除了 javascript:，先手动输入 javascript:，再粘贴后面的内容。
+4. 脚本会自动读取页面、下载图片并保存 PDF。
+脚本默认使用 2f 清晰度；如需更高清，可在源码中将 DEFAULT_RESOLUTION = "2f" 改为 "3f" 或 "5f"。
+**使用风险与责任提示：** 本工具通过读取论文阅读页面并抓取页面内容生成 PDF。使用前，请确认你有权访问、下载和处理相关内容，并遵守论文平台的使用规则、学校或单位的网络与信息安全规定，以及适用的著作权、保密等法律法规。未经授权抓取、保存、传播或以其他不当方式使用内容，可能导致账号或访问权限受限、违反学校或单位规定，或引发版权、保密及其他法律争议；具体后果取决于实际行为和适用规定。请勿使用本工具绕过访问控制、批量获取或传播受限内容。本工具仅提供页面抓取技术，不代表相关内容已获授权，也不对具体使用方式的合法性作出判断；用户应自行评估并承担使用本工具及其获取内容所产生的风险和责任。
 ## 原理
 - 脚本会首先请求所有pdf图片链接
 - 随后请求图片，
